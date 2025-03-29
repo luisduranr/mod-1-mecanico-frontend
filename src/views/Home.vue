@@ -21,6 +21,13 @@ import { RouterLink } from 'vue-router'
             </li>
           </ul>
         </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <RouterLink to="/productos" class="nav-link">Productos</RouterLink>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -38,6 +45,12 @@ import { RouterLink } from 'vue-router'
           to="/categorias"
           class="btn btn-primary btn-lg">
           Ver Categorías
+        </RouterLink>
+        <hr class="my-4">
+        <RouterLink
+          to="/productos"
+          class="btn btn-primary btn-lg">
+          Ver Productos
         </RouterLink>
       </div>
 
@@ -64,9 +77,11 @@ import { RouterLink } from 'vue-router'
               <p class="card-text">
                 Administra los productos asociados a tus categorías (próximamente).
               </p>
-              <button class="btn btn-outline-secondary" disabled>
-                Próximamente
-              </button>
+              <RouterLink
+                to="/productos"
+                class="btn btn-outline-primary">
+                Gestionar
+              </RouterLink>
             </div>
           </div>
         </div>
